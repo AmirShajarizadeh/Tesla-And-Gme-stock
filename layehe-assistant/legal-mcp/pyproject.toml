@@ -1,7 +1,7 @@
 [project]
-name = "ara-mcp"
+name = "legal-mcp"
 version = "0.1.0"
-description = "Read-only MCP server for Iranian court rulings (سامانه ملی آرای قضایی) and other legal sites, through a real browser"
+description = "Read-only MCP server for Iranian laws (qavanin.ir) and court rulings (ara.jri.ac.ir), through a local browser"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
@@ -11,7 +11,7 @@ dependencies = [
 ]
 
 [project.scripts]
-ara-mcp = "ara_mcp.server:main"
+legal-mcp = "legal_mcp.server:main"
 
 [dependency-groups]
 dev = ["pytest>=8"]

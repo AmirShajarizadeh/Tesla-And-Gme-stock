@@ -1,12 +1,8 @@
 {
   "mcpServers": {
-    "qavanin": {
-      "command": "uvx",
-      "args": ["qavanin-mcp"]
-    },
-    "ara": {
+    "legal": {
       "command": "uv",
-      "args": ["run", "--directory", "${CLAUDE_PLUGIN_ROOT}/ara-mcp", "ara-mcp"]
+      "args": ["run", "--directory", "${CLAUDE_PLUGIN_ROOT}/legal-mcp", "legal-mcp"]
     }
   }
 }

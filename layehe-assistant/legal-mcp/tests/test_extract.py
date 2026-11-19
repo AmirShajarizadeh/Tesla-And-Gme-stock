@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from ara_mcp.extract import fa, is_challenge, main_text, page_slice, result_links, site_of
+from legal_mcp.extract import fa, is_challenge, main_text, page_slice, result_links, site_of
 
 F = Path(__file__).parent / "fixtures"
 
