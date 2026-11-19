@@ -1,0 +1,26 @@
+[project]
+name = "ara-mcp"
+version = "0.1.0"
+description = "Read-only MCP server for Iranian court rulings (سامانه ملی آرای قضایی) and other legal sites, through a real browser"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=2.2,<3",
+    "playwright>=1.45",
+    "beautifulsoup4>=4.12",
+]
+
+[project.scripts]
+ara-mcp = "ara_mcp.server:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-m 'not live'"
+markers = ["live: calls the real sites (run with -m live, only from a network that reaches them)"]

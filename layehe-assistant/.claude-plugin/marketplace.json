@@ -1,0 +1,11 @@
+{
+  "name": "layehe",
+  "owner": { "name": "layehe-assistant" },
+  "plugins": [
+    {
+      "name": "layehe-assistant",
+      "source": "./",
+      "description": "لایحه‌نویسی با استناد به قوانین و رأی‌های مشابه"
+    }
+  ]
+}
